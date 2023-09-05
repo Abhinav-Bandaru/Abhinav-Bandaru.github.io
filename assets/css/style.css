@@ -1427,7 +1427,19 @@ textarea.form-input::-webkit-resizer { display: none; }
     border-radius: 20px;
   }
 
-  .testimonials-avatar-box img { width: 80px; }
+  /* .clients-item img {
+    width: 100%;
+    filter: grayscale(1);
+    transition: var(--transition-1);
+  } */
+
+  .testimonials-avatar-box img { 
+    width: 80px; 
+    filter: grayscale(0.5);
+    transition: var(--transition-1);
+  }
+
+  .testimonials-avatar-box img:hover { filter: grayscale(0); }
 
   .testimonials-item-title {
     margin-bottom: 10px;
